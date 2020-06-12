@@ -66,16 +66,18 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2018</vh>
 <v t="leo.20180423103639.1"><vh>2018 Fall CP 課程</vh>
-<v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
-<v t="leo.20200522143809.1"><vh>@edit 20200522-1.md</vh></v>
-<v t="leo.20200522152108.1"><vh>@edit 20200522-2.md</vh></v>
-<v t="leo.20200522152116.1"><vh>@edit 20200522-3.md</vh></v>
+<v t="leo.20180423103656.1"><vh>@clean 20180910.md</vh></v>
+<v t="leo.20200522143809.1"><vh>@clean 20200522-1.md</vh></v>
+<v t="leo.20200522152108.1"><vh>@clean 20200522-2.md</vh></v>
+<v t="leo.20200522152116.1"><vh>@clean 20200522-3.md</vh></v>
 </v>
 </v>
 </v>
 <v t="yen.20170108171733.83"><vh>產生 .key 與 .crt 指令</vh></v>
 </v>
 <v t="yen.20170108171930.1"><vh>@button https server</vh></v>
+<v t="leo.20200529142113.1"><vh>@button add_to_blogger</vh></v>
+<v t="leo.20200529142113.2"><vh>@button edit_to_blogger</vh></v>
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
 </vnodes>
 <tnodes>
@@ -103,6 +105,320 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180115142025.1"></t>
 <t tx="leo.20180423103639.1"></t>
+<t tx="leo.20180423103656.1">@language md
+---
+Title: 2018 Fall CP 課程
+Date: 2018-09-10 11:00
+Category: Misc
+Tags: 2018FallCP
+Slug: 2018-Fall-32-bit-Windows
+Author: yen
+---
+
+2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+電腦規格
+----
+
+目前系上已經沒有 32 位元 Windows 操作系統的電腦, 所以先前只要有學生提到所使用的電腦是舊型 32 位元的 Windows XP 或 Windows 7, 都無法提供相應的可攜程式系統.
+
+但是, 當您桌上就只一台早期 Sony 推出的 VGC-LM26T 電腦, 採用 Intel core 2 Duo T8100 2.1 GHz 裝載 32 位元 Windows 7, 記憶體只有 2GB 的老舊電腦.
+
+夠用嗎?
+
+當然可以, 使用的是特別製作的 [32 位元可攜系統], 除了不支援 Eric6 之外, 其餘功能都與 64 位元的  [p37] 相同.
+
+[32 位元可攜系統]: https://mde1a1.kmol.info/2017fall/raw/p37_32.7z?name=c272a694f98180f8d1272b43f7d7b4fdd8f7f550
+[p37]: https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing
+
+工作流程
+----
+
+從 2018 Fall 開始, 前半學期希望每位計算機程課程的學員, 都能透過 [2018 計算機程式教材] 內容, 深入學習 Python 3 各種程式語法, 利用 [CMSimfly]、[Pelican] 與 [Reveal.js], 熟悉如何在 [Github] 配置自己的網站、網誌與網際簡報系統.
+
+使用時, 啟動隨身系統的 start.bat, 利用命令列指令, git clone https://github.com/mdecourse/2018fall, 然後將內容配置在各自的 [Github] 帳號下.
+
+[Github]: https://github.com/
+[2018 計算機程式教材]:  http://mde.tw/cp2018/content/
+[CMSimfly]: https://github.com/chiamingyen/cmsimfly
+[Pelican]: https://github.com/getpelican/pelican
+[Reveal.js]: https://revealjs.com/
+
+程式專案
+----
+
+早在 1999 年, 就已經開始進行所謂[網際機械設計資源中心]的構建, 想像中的資源中心是一套網際專家系統, 包含各式機械設計流程中所需的模組, 全部依附在一個相對穩定, 可以持續改進的核心架構下, 類似 [docassemble] 的一套系統.
+
+將近二十年過去, [網際機械設計資源中心]始終仍只有片段系統, 其中包含 [CMSimfly]、[Pygrouf] 與 [Pyslvs] ([Pyslvs 手冊])等相關專案.
+
+就如同[如何寫出有用的程式?] 一文中所述, "沒有興趣不要來念資工" 是一句非常貼切的警語, 當學生對於程式設計提不起興趣, 沒有將所學的各式語法、資料結構與演算法, 套用在自己非常有興趣的領域中, 用來解決各式問題的話, 日復一日, 我們還是寫不出任何有用的程式!
+
+[網際機械設計資源中心]: https://webcache.googleusercontent.com/search?q=cache:sqYPNC8_mgoJ:https://www.most.gov.tw/sci/ch/detail%3Farticle_uid%3D4ee546e6-73fa-43a8-b1df-a5a0a1fe1824%26menu_id%3D0bac23e6-b3df-4fe0-b152-2e1050eb2f2c%26content_type%3DP%26view_mode%3DlistView+&amp;cd=6&amp;hl=zh-TW&amp;ct=clnk&amp;gl=tw
+[docassemble]: https://github.com/jhpyle/docassemble
+[Pygrouf]: https://github.com/chiamingyen/pygrouf
+[Pyslvs]: https://github.com/KmolYuan/Pyslvs-PyQt5
+[Pyslvs 手冊]: http://www.pyslvs.com/content/
+[如何寫出有用的程式?]: http://blog.ez2learn.com/2009/06/27/how-to-write-useful-program/
+
+早該起頭的重要工作
+----
+
+[計算機程式的重要性]其實已經無需爭辯, 人類未來的許多工作都是透過網路與數位運算達成, 既知趨勢如此, 每一位工程師就該越早起頭原本就該進行的重要工作, 透過計算機程式來解決問題, 構築一個值得長期投注心力的程式專案.
+
+[計算機程式的重要性]: https://www.quora.com/Why-is-programming-so-important-in-the-modern-world
+</t>
+<t tx="leo.20200522143809.1">@language md
+---
+Title: 2020 wcmj2020 blog w12 test
+Date: 2020-05-22 14:00
+Category: Misc
+Tags: 2020FallCP
+Slug: 2020-版本控制
+Author: yen
+---
+
+何謂版本控制？
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+顧名思義，版本控制主要應用於專案的多版本文件管理。要管理版本，必須控管每一次專案中文件內容的更動（添加，修改或刪除）。版本控制會記錄對一個文件（或一組文件）所做的每次更改，並提供一種撤消或轉回每次更改的方法。
+
+為了獲得有效的版本控制，您必須使用能夠管理版本控制系統的工具 (在本課程中, 我們採用 Git)。
+
+使用版本控制的最重要優勢之一是能夠採團隊合作模式進行專案文件的建構。
+
+當某一專案成員在對特定文件進行內容貢獻時，若無有效管控追蹤特定內容的更動，將可能產生許多問題，因為可能會彼此覆蓋或抹除先前所建立重要的內容。使用版本控制，各成員可以處理各自的專案副本（稱為分支），並且僅在自己（或其他團隊成員）對工作內容滿意後才將這些更動合併到主項目中。</t>
+<t tx="leo.20200522152108.1">@language md
+---
+Title: 簡單說明個人電腦軟硬體所牽涉的相關術語及基本功能 
+Date: 2020-05-22 14:00
+Category: Misc
+Tags: 2020FallCP
+Slug: 2020-個人電腦軟硬體
+Author: yen
+---
+1 Supercomputer (運算、記憶與儲存容量達到一定數量, 可以提供特定高速運算服務之全時開機超級電腦)
+2 Mainframe (由許多 Server 叢集整合而成, 相對封閉, 提供特定運算或資訊交換服務之全時開機電腦, 如機場、交通、警政、地政、戶政或金融用主機電腦群)
+3 Server Computer (一般較小型的開放或封閉伺服器, 提供 WWW, mail, sftp 或資料庫儲存用之全時開機電腦)
+4 Workstation Computer (提供專業機械、土木、建築、多媒體或其他需要即時 3D 虛實互動整合輔助的工程設計專用電腦工作站)
+5 Personal Computer or PC (個人電腦)
+6 Microcontroller (可隨身感測與互動裝置, 以及嵌入式應用之微控制運算器)
+7 Smartphone (個人隨身通訊手機裝置)
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+</t>
+<t tx="leo.20200522152116.1">@language md
+---
+Title: 説明國立科大重啓五專的背景
+Date: 2020-05-22 14:00
+Category: Misc
+Tags: 2020FallCP
+Slug: 2020-五專的背景
+Author: yen
+---
+
+量身訂做產業專員 (所謂的產業學院)
+您希望成為產業人力輸送帶中的一員? 當輸送帶輸出端再無需求, 輸送帶上的「人」該何去何從?
+
+二十年前許多台灣的產業為何外移?
+當時台灣的平均薪資無法支撐產業成品所創造的產值? 或者台灣當時的人力專業水準無法勝任這些產品持續改進的產品技術? 這些產業外移後, 員工下場?
+
+近幾年, 許多所謂的精密機械產業為何又移回台灣? 二十年後, 這些公司所形成的聚落, 預計會再有那些可能的遷移或變動? 所需要的是既定工作流程中的一般人力? 抑或隨著全球高科技產業不斷發展, 人工智慧應用普及, 會需要更多高階具創新能力的研發人員?
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+三十年前的國道收費員
+下場
+
+希望當時沒有學校配合政府量身訂做國道收費產業專員!!!
+
+疫情當前, 能夠遠端在家上班的是那些族群?
+透過網路提供腦力產值的員工? 還是一定必須親臨現場, 提供勞動力產值的員工???
+
+有沒有可能二十年後, 許多必須親臨現場, 提供勞力服務的族群, 會有一定數量, 來自不受疫病感染的機電資光生整合系統 (智慧機器人)?
+
+放眼未來, 四面環海, 沒有充足金屬、石油礦產, 也沒有穩定水源、風力、太陽能源的台灣, 此後五十年, 應該需要大力推動什麼產業?訂做何種專業人力?
+</t>
+<t tx="leo.20200529142113.1">@language python
+
+from markdown import markdown
+from oauth2client import client
+from googleapiclient import sample_tools
+import os
+ 
+os.environ['TZ'] = 'Asia/Taipei'
+argv = ""
+# 認證並建立服務
+# name of the api is "blogger", version is "v3"
+# description of the api is __doc__
+# file name of the application: location of client_secrets.json
+service, flags = sample_tools.init(
+  argv, 'blogger', 'v3', __doc__, "./../../client_secrets.json",
+  scope='https://www.googleapis.com/auth/blogger')
+ 
+ 
+def get_cat_tag_content(data):
+    # 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---
+    # 用跳行符號分割
+    data_list = data.split("\n")
+    #第 2 行為 title
+    title= data_list[1]
+    #第 4 行為 category
+    category = data_list[3]
+    #第 5 行為 tags
+    tags = data_list[4]
+    # 有多項資料的 content 型別為數列
+    # 再將第 9 行之後的資料數列串回成以跳行隔開的資料
+    content = "\n".join(data_list[8:])
+    # 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;
+    content = content.replace('&lt;!-- PELICAN_END_SUMMARY --&gt;', '&lt;!--more--&gt;')
+    # 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式
+    #content = content.replace('~~~python', '[code lang="python"]')
+    #content = content.replace('~~~', '[/code]')
+    return title, category, tags, content
+ 
+# 從目前所在節點的 body pan 中取出類別, tags 以及文章內容
+# p.h 為 @clean filename.md
+# 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案
+md_filename = p.h.split(" ")[1]
+with open(md_filename, 'r', encoding="utf-8") as content_file:
+    md_content = content_file.read()
+# title_str, category_str, tags_str, content = get_cat_tag_content(p.b)
+title_str, category_str, tags_str, content = get_cat_tag_content(md_content)
+category = category_str.split(":")[1]
+tags = tags_str.split(":")[1].split(",")
+tags.append(category)
+# title 是一個單獨的字串
+title = title_str.split(":")[1]
+# 將 markdown 格式 content 轉為 html
+content = markdown(content)
+# 以下處理 content 的 &lt;h2&gt; 標題
+content = content.replace("&lt;h2&gt;", "&lt;h2&gt;&lt;font size='4'&gt;")
+content = content.replace("&lt;/h2&gt;", "&lt;/font&gt;&lt;/h2&gt;")
+# g.es(content)
+ 
+try:
+    '''
+    users = service.users()
+    # 取得使用者 profile 資料
+    user = users.get(userId='self').execute()
+    print('網誌名稱: %s' % user['displayName'])
+    '''
+    blogs = service.blogs()
+    # 取得使用者所建立網誌名稱
+    blogs = blogs.listByUser(userId='self').execute()
+    # post_id is now blogs["items"][0]["id"]
+    blog_id = blogs["items"][0]["id"]
+    #for blog in blogs['items']:
+        #print(blog['name'], blog['url'])
+    posts = service.posts()
+    # 新增網誌 post 時, 需要 post_id
+    body = {
+    "kind": "blogger#post",
+    "id": blog_id,
+    "title": title,
+    # 利用 markdown 函式, 將 .md 的內文轉為 html, 作為 Blogger 的文章內容
+    "content": content,
+    "labels": tags
+    }
+    insert = posts.insert(blogId=blog_id, body=body)
+    posts_doc = insert.execute()
+    post_id = posts_doc["id"]
+    #print(posts_doc)
+    os.remove("blogger.dat")
+    # 利用最後的 child 節點來儲存 post_id
+    to_save_post_id = p.insertAsLastChild()   
+    # 改為內文為空的節點, id 直接標在 head 標題 
+    to_save_post_id.b = ""
+    to_save_post_id.h = post_id
+    # 因為新增節點, commander 必須 redraw
+    c.redraw()
+    g.es("post_id 為", post_id)
+    g.es("已經將資料送往 Blogger!")
+except(client.AccessTokenRefreshError):
+    g.es("error")</t>
+<t tx="leo.20200529142113.2">@language python
+
+from markdown import markdown
+from oauth2client import client
+from googleapiclient import sample_tools
+import os
+ 
+os.environ['TZ'] = 'Asia/Taipei'
+argv = ""
+# 認證並建立服務
+# name of the api is "blogger", version is "v3"
+# description of the api is __doc__
+# file name of the application: location of client_secrets.json
+service, flags = sample_tools.init(
+  argv, 'blogger', 'v3', __doc__, "./../../client_secrets.json",
+  scope='https://www.googleapis.com/auth/blogger')
+ 
+ 
+def get_cat_tag_content(data):
+    # 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---
+    # 用跳行符號分割
+    data_list = data.split("\n")
+    #第 2 行為 title
+    title= data_list[1]
+    #第 4 行為 category
+    category = data_list[3]
+    #第 5 行為 tags
+    tags = data_list[4]
+    # 有多項資料的 content 型別為數列
+    # 再將第 9 行之後的資料數列串回成以跳行隔開的資料
+    content = "\n".join(data_list[8:])
+    # 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;
+    content = content.replace('&lt;!-- PELICAN_END_SUMMARY --&gt;', '&lt;!--more--&gt;')
+    # 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式
+    #content = content.replace('~~~python', '[code lang="python"]')
+    #content = content.replace('~~~', '[/code]')
+    return title, category, tags, content
+ 
+# 從目前所在節點的 body pan 中取出類別, tags 以及文章內容
+# p.h 為 @clean filename.md
+# 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案
+md_filename = p.h.split(" ")[1]
+with open(md_filename, 'r', encoding="utf-8") as content_file:
+    md_content = content_file.read()
+# title_str, category_str, tags_str, content = get_cat_tag_content(p.b)
+title_str, category_str, tags_str, content = get_cat_tag_content(md_content)
+category = category_str.split(":")[1]
+tags = tags_str.split(":")[1].split(",")
+tags.append(category)
+# title 是一個單獨的字串
+title = title_str.split(":")[1]
+# 將 markdown 格式 content 轉為 html
+content = markdown(content)
+# 以下處理 content 的 &lt;h2&gt; 標題
+content = content.replace("&lt;h2&gt;", "&lt;h2&gt;&lt;font size='4'&gt;")
+content = content.replace("&lt;/h2&gt;", "&lt;/font&gt;&lt;/h2&gt;")
+# g.es(content)
+ 
+try:
+    blogs = service.blogs()
+    # 取得使用者所建立網誌名稱
+    blogs = blogs.listByUser(userId='self').execute()
+    blog_id = blogs["items"][0]["id"]
+    # 設法取得原 post 的 id
+    postid_outline = p.getLastChild()
+    # 直接從標題取得 post 的 id 號碼
+    post_id = postid_outline.h
+    posts = service.posts()
+    # 更新網誌文章時的 body
+    body = {
+    "kind": "blogger#post",
+    "title": title,
+    "content": content
+    }
+    # need to save postId to outline head
+    update = posts.update(blogId=blog_id, postId=post_id, body=body, publish=True)
+    update_doc = update.execute()
+    os.remove("blogger.dat")
+    g.es("post_id 為", post_id)
+    g.es("已經將更新資料送往 Blogger!")
+except(client.AccessTokenRefreshError):
+    g.es("error")</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
